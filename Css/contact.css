@@ -1,0 +1,52 @@
+@import url('./projects.css');
+@import url('./footer.css');
+.contact{
+    display: grid;
+    grid-template-columns: 20px;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-areas: 'li li'
+                         'fc fc'
+                         'in in';
+    padding: 10px;
+    
+}
+
+.cont{
+    width: 50px;
+    height:50px;
+    padding: 20px;
+
+}
+
+#box1{
+   grid-area: li;
+}
+
+#box2{
+    grid-area: fc;
+    
+}
+
+#box3{
+    grid-area: in;
+}
+
+a:hover{
+    background-color: rgba(139, 165, 189, 0.577);
+    padding: 5px;
+    text-decoration:none;
+}
+
+  /* When screen is small than 768*/
+  @media only screen and (max-width: 768px) {
+   
+    .contact{
+        grid-template-columns: 100px;
+        grid-template-areas: 'li li'
+                             'fc fc'
+                             'in in';
+       justify-items: center;
+       padding: 50px;
+    }
+   
+}

@@ -1,0 +1,11 @@
+/*FOOTER in all pages*/
+.footer {
+    grid-area: ft;
+    background-color: #ebd1d1;
+    color: #794f4f;
+    text-align: center;
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    width: 100%; 
+}

@@ -1,0 +1,59 @@
+@import url('./resume.css');
+@import url('./footer.css');
+       
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: hsl(0, 0%, 100%);
+        }
+        
+        .profile {
+            grid-area: main;
+            height: 400px;
+            justify-content: center;
+        }
+
+
+        .p5 {
+            display: flex;
+            line-height: 1.6;
+            color: #666;
+            width: 700px;
+            height: 300px;
+            align-items:flex-end;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+       
+        h3{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-decoration-line: underline;
+        }
+
+        figcaption{
+            font-size: larger;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-transform: uppercase;
+        }
+    
+        #img2{
+            justify-content: center;
+            margin: 50px;
+        }
+        
+      
+     /* When screen is small than 768*/
+@media(max-width: 768px) {
+    section{
+    flex-direction: column;
+    width: auto;
+    }
+    .p5{
+        width: 250px;
+        height: 800px;
+    }
+    #img2, .Rass{
+        width: 200px;
+        justify-items: center;
+    }
+    }
